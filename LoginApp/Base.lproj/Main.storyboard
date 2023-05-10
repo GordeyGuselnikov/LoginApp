@@ -36,8 +36,12 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Log In"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="logInPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="BX9-gF-bGE"/>
                                             <segue destination="67H-Q6-JuX" kind="presentation" modalPresentationStyle="fullScreen" id="opp-TT-dko"/>
                                         </connections>
                                     </button>
@@ -80,7 +84,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="logInButton" destination="lGI-zC-BDj" id="fwE-at-62b"/>
+                        <outlet property="logInButton" destination="lGI-zC-BDj" id="vY5-19-ag9"/>
                         <outlet property="passwordTF" destination="Rre-MN-f9D" id="7Fw-77-kvW"/>
                         <outlet property="userNameTF" destination="ogo-sI-HuT" id="Rvl-da-psm"/>
                     </connections>
