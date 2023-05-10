@@ -14,7 +14,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var logInButton: UIButton!
     
-    // MARK: - Private properties
+    // MARK: - Private Properties
     private let user = User.getUserData()
     
     // MARK: - Override Methods
@@ -23,7 +23,7 @@ final class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
-    // MARK: Navigation
+    // MARK: - Navigation
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard userNameTF.text == user.name, passwordTF.text == user.password else {
             showAlert(title: "Invalid login or password",
@@ -39,7 +39,7 @@ final class LoginViewController: UIViewController {
         welcomeVC.user = user
     }
     
-    // MARK: IBActions
+    // MARK: - IBActions
     @IBAction func forgotUserNameTapped() {
         showAlert(title: "Oops!", message: "Your name is \(user.name) 😉")
     }
