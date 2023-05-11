@@ -12,7 +12,6 @@ final class LoginViewController: UIViewController {
     // MARK: - IB Outlets
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
-    @IBOutlet weak var logInButton: UIButton!
     
     // MARK: - Private Properties
     private let user = User.getUserData()
@@ -26,9 +25,11 @@ final class LoginViewController: UIViewController {
     // MARK: - Navigation
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard userNameTF.text == user.name, passwordTF.text == user.password else {
-            showAlert(title: "Invalid login or password",
-                      message: "Please, enter correct login and password",
-                      textField: passwordTF)
+            showAlert(
+                title: "Invalid login or password",
+                message: "Please, enter correct login and password",
+                textField: passwordTF
+            )
             return false
         }
         return true
@@ -49,8 +50,8 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        userNameTF.text = nil
-        passwordTF.text = nil
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
 }
 
@@ -60,7 +61,7 @@ extension LoginViewController {
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            textField?.text = nil
+            textField?.text = ""
         }
         alert.addAction(okAction)
         present(alert, animated: true)
