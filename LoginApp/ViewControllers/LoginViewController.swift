@@ -54,8 +54,17 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let welcomeVC = tabBarController.viewControllers?.first as? WelcomeViewController else { return }
         welcomeVC.user = user
+        
+        guard let navigationVC = tabBarController.viewControllers?.last as? UINavigationController else { return }
+        navigationVC.title = user.person.fullName
+        
+        guard let aboutMeVC = navigationVC.topViewController as? AboutMeViewController else { return }
+        aboutMeVC.user = user
+        aboutMeVC.primaryColor = primaryColor
+        aboutMeVC.secondaryColor = secondaryColor
     }
     
     // MARK: - IBActions

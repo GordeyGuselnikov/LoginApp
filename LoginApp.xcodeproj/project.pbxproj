@@ -16,6 +16,7 @@
 		8FD65C2B2A0C0E9C0037C21B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD65C2A2A0C0E9C0037C21B /* User.swift */; };
 		8FD65C312A0C18A30037C21B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD65C302A0C18A30037C21B /* WelcomeViewController.swift */; };
 		8FD65C332A0EA0440037C21B /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD65C322A0EA0440037C21B /* Extension + UIView.swift */; };
+		8FD65C3A2A0EBBBB0037C21B /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD65C392A0EBBBB0037C21B /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8FD65C2A2A0C0E9C0037C21B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8FD65C302A0C18A30037C21B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8FD65C322A0EA0440037C21B /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		8FD65C392A0EBBBB0037C21B /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				8FD65C1A2A0C037A0037C21B /* LoginViewController.swift */,
 				8FD65C302A0C18A30037C21B /* WelcomeViewController.swift */,
 				8FD65C322A0EA0440037C21B /* Extension + UIView.swift */,
+				8FD65C392A0EBBBB0037C21B /* AboutMeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				8FD65C2B2A0C0E9C0037C21B /* User.swift in Sources */,
 				8FD65C312A0C18A30037C21B /* WelcomeViewController.swift in Sources */,
+				8FD65C3A2A0EBBBB0037C21B /* AboutMeViewController.swift in Sources */,
 				8FD65C332A0EA0440037C21B /* Extension + UIView.swift in Sources */,
 				8FD65C1B2A0C037A0037C21B /* LoginViewController.swift in Sources */,
 				8FD65C172A0C037A0037C21B /* AppDelegate.swift in Sources */,
