@@ -15,6 +15,7 @@
 		8FD65C232A0C037B0037C21B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FD65C212A0C037B0037C21B /* LaunchScreen.storyboard */; };
 		8FD65C2B2A0C0E9C0037C21B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD65C2A2A0C0E9C0037C21B /* User.swift */; };
 		8FD65C312A0C18A30037C21B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD65C302A0C18A30037C21B /* WelcomeViewController.swift */; };
+		8FD65C332A0EA0440037C21B /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD65C322A0EA0440037C21B /* Extension + UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8FD65C242A0C037B0037C21B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FD65C2A2A0C0E9C0037C21B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8FD65C302A0C18A30037C21B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8FD65C322A0EA0440037C21B /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8FD65C162A0C037A0037C21B /* AppDelegate.swift */,
 				8FD65C182A0C037A0037C21B /* SceneDelegate.swift */,
 				8FD65C1A2A0C037A0037C21B /* LoginViewController.swift */,
+				8FD65C322A0EA0440037C21B /* Extension + UIView.swift */,
 				8FD65C302A0C18A30037C21B /* WelcomeViewController.swift */,
 				8FD65C2A2A0C0E9C0037C21B /* User.swift */,
 				8FD65C1C2A0C037A0037C21B /* Main.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				8FD65C2B2A0C0E9C0037C21B /* User.swift in Sources */,
 				8FD65C312A0C18A30037C21B /* WelcomeViewController.swift in Sources */,
+				8FD65C332A0EA0440037C21B /* Extension + UIView.swift in Sources */,
 				8FD65C1B2A0C037A0037C21B /* LoginViewController.swift in Sources */,
 				8FD65C172A0C037A0037C21B /* AppDelegate.swift in Sources */,
 				8FD65C192A0C037A0037C21B /* SceneDelegate.swift in Sources */,

@@ -16,7 +16,25 @@ final class LoginViewController: UIViewController {
     // MARK: - Private Properties
     private let user = User.getUserData()
     
+    private let primaryColor = UIColor(
+        red: 210/255,
+        green: 109/255,
+        blue: 128/255,
+        alpha: 1
+    )
+    private let secondaryColor = UIColor(
+        red: 107/255,
+        green: 148/255,
+        blue: 230/255,
+        alpha: 1
+    )
+    
     // MARK: - Override Methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
@@ -41,12 +59,10 @@ final class LoginViewController: UIViewController {
     }
     
     // MARK: - IBActions
-    @IBAction func forgotUserNameTapped() {
-        showAlert(title: "Oops!", message: "Your name is \(user.name) 😉")
-    }
-    
-    @IBAction func forgotPasswordTapped() {
-        showAlert(title: "Oops!", message: "Your password is \(user.password) 😉")
+    @IBAction func forgotRegisterData(_ sender: UIButton) {
+        sender.tag == 0
+        ? showAlert(title: "Oops!", message: "Your name is \(user.name) 😉")
+        : showAlert(title: "Oops!", message: "Your password is \(user.password) 😉")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
