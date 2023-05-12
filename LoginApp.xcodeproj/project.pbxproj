@@ -98,8 +98,8 @@
 				8FD65C1A2A0C037A0037C21B /* LoginViewController.swift */,
 				8FD65C302A0C18A30037C21B /* WelcomeViewController.swift */,
 				8FD65C392A0EBBBB0037C21B /* AboutMeViewController.swift */,
-				8FD65C322A0EA0440037C21B /* Extension + UIView.swift */,
 				8FD65C3B2A0EE7A70037C21B /* DetailViewController.swift */,
+				8FD65C322A0EA0440037C21B /* Extension + UIView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
