@@ -47,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FC490542A158CED0072A6FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8FD65C322A0EA0440037C21B /* Extension + UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8FD65C0A2A0C03790037C21B = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +77,7 @@
 				8FD65C372A0EA6770037C21B /* App */,
 				8FD65C352A0EA6410037C21B /* Models */,
 				8FD65C362A0EA6550037C21B /* ViewControllers */,
+				8FC490542A158CED0072A6FC /* Extensions */,
 				8FD65C342A0EA62A0037C21B /* Storyboards */,
 				8FD65C382A0EA8530037C21B /* Resources */,
 			);
@@ -99,7 +108,6 @@
 				8FD65C302A0C18A30037C21B /* WelcomeViewController.swift */,
 				8FD65C392A0EBBBB0037C21B /* AboutMeViewController.swift */,
 				8FD65C3B2A0EE7A70037C21B /* DetailViewController.swift */,
-				8FD65C322A0EA0440037C21B /* Extension + UIView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

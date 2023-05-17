@@ -15,15 +15,13 @@ final class DetailViewController: UIViewController {
     // MARK: - Public Properties
     var user: User!
     
-    var primaryColor: UIColor!
-    var secondaryColor: UIColor!
-    
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Details"
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        view.addVerticalGradientLayer()
+        detailsTextView.backgroundColor = .clear
         detailsTextView.text = user.person.details
     }
 }

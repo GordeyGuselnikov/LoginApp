@@ -20,14 +20,11 @@ final class AboutMeViewController: UIViewController {
     // MARK: - Public Properties
     var user: User!
     
-    var primaryColor: UIColor!
-    var secondaryColor: UIColor!
-    
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        view.addVerticalGradientLayer()
         title = user.person.fullName
         
         nameLabel.text = "Name: " + user.person.name
@@ -44,7 +41,5 @@ final class AboutMeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailVC = segue.destination as? DetailViewController else { return }
         detailVC.user = user
-        detailVC.primaryColor = primaryColor
-        detailVC.secondaryColor = secondaryColor
     }
 }

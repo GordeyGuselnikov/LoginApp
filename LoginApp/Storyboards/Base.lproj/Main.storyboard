@@ -210,7 +210,7 @@
                     <navigationItem key="navigationItem" id="Jyn-qY-Hfh">
                         <barButtonItem key="rightBarButtonItem" title="Details" id="BpT-vg-ojE">
                             <connections>
-                                <segue destination="WRU-r6-Cy2" kind="show" id="52J-UH-E0A"/>
+                                <segue destination="fEP-CW-eI0" kind="show" id="WZS-PE-2xK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -227,25 +227,38 @@
             <point key="canvasLocation" x="2518.125" y="805.9859154929577"/>
         </scene>
         <!--Detail View Controller-->
-        <scene sceneID="6IU-6M-gaF">
+        <scene sceneID="WFy-n0-MjA">
             <objects>
-                <viewController id="WRU-r6-Cy2" customClass="DetailViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some text" textAlignment="natural" id="Wo7-T1-dMf">
+                <viewController id="fEP-CW-eI0" customClass="DetailViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="89C-BS-IEV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eNM-HB-klQ">
+                                <rect key="frame" x="16" y="64" width="288" height="435"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2hQ-gu-fcy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <color key="textColor" systemColor="labelColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
-                    <navigationItem key="navigationItem" id="Glp-jG-c6z"/>
+                        <constraints>
+                            <constraint firstItem="2hQ-gu-fcy" firstAttribute="trailing" secondItem="eNM-HB-klQ" secondAttribute="trailing" constant="16" id="Ru0-E7-jlT"/>
+                            <constraint firstItem="eNM-HB-klQ" firstAttribute="top" secondItem="2hQ-gu-fcy" secondAttribute="top" constant="20" id="U4c-ua-Gpl"/>
+                            <constraint firstItem="2hQ-gu-fcy" firstAttribute="bottom" secondItem="eNM-HB-klQ" secondAttribute="bottom" constant="20" id="V3S-sh-h4K"/>
+                            <constraint firstItem="eNM-HB-klQ" firstAttribute="leading" secondItem="2hQ-gu-fcy" secondAttribute="leading" constant="16" id="ZCB-S0-tlr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eRK-qh-JA9"/>
                     <connections>
-                        <outlet property="detailsTextView" destination="Wo7-T1-dMf" id="8yP-p1-png"/>
+                        <outlet property="detailsTextView" destination="eNM-HB-klQ" id="ASv-BH-it3"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6ds-Or-fr3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HhR-le-NO9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3461" y="806"/>
+            <point key="canvasLocation" x="3330" y="805.9859154929577"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="C4D-c1-oB8">
