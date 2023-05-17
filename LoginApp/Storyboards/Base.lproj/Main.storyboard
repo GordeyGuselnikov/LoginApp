@@ -159,8 +159,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2023-03-07 14.58.57" translatesAutoresizingMaskIntoConstraints="NO" id="Qy3-Ar-8CK">
-                                <rect key="frame" x="96" y="64" width="128" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2023-03-07 14.58.57" translatesAutoresizingMaskIntoConstraints="NO" id="Qy3-Ar-8CK">
+                                <rect key="frame" x="96" y="64" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Qy3-Ar-8CK" secondAttribute="height" multiplier="1:1" id="Ufe-OZ-Pz6"/>
                                 </constraints>
@@ -198,11 +198,11 @@
                         <viewLayoutGuide key="safeArea" id="F96-gS-vIZ"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
-                            <constraint firstItem="Qy3-Ar-8CK" firstAttribute="width" secondItem="JJk-1U-c31" secondAttribute="height" multiplier="16:71" id="3dS-tP-K68"/>
-                            <constraint firstItem="Qy3-Ar-8CK" firstAttribute="centerX" secondItem="JJk-1U-c31" secondAttribute="centerX" id="CP8-5C-Cdy"/>
+                            <constraint firstItem="Qy3-Ar-8CK" firstAttribute="width" secondItem="JJk-1U-c31" secondAttribute="height" multiplier="16:71" constant="-8" id="3dS-tP-K68"/>
+                            <constraint firstItem="Qy3-Ar-8CK" firstAttribute="centerX" secondItem="JJk-1U-c31" secondAttribute="centerX" constant="-4" id="CP8-5C-Cdy"/>
                             <constraint firstItem="fMK-tU-PUl" firstAttribute="leading" secondItem="F96-gS-vIZ" secondAttribute="leading" constant="16" id="DKD-jL-npw"/>
                             <constraint firstItem="Qy3-Ar-8CK" firstAttribute="top" secondItem="F96-gS-vIZ" secondAttribute="top" constant="20" id="OOy-QJ-3Fp"/>
-                            <constraint firstItem="fMK-tU-PUl" firstAttribute="top" secondItem="Qy3-Ar-8CK" secondAttribute="bottom" constant="20" id="ie2-d1-7ed"/>
+                            <constraint firstItem="fMK-tU-PUl" firstAttribute="top" secondItem="Qy3-Ar-8CK" secondAttribute="bottom" constant="28" id="ie2-d1-7ed"/>
                             <constraint firstItem="fMK-tU-PUl" firstAttribute="centerX" secondItem="JJk-1U-c31" secondAttribute="centerX" id="k0X-PQ-pfk"/>
                             <constraint firstItem="F96-gS-vIZ" firstAttribute="trailing" secondItem="fMK-tU-PUl" secondAttribute="trailing" constant="16" id="m2B-UX-2XY"/>
                         </constraints>
@@ -253,6 +253,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pHf-Zk-EM1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4yB-jz-PxL">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
