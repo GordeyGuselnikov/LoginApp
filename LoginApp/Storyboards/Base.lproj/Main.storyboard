@@ -159,7 +159,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2023-03-07 14.58.57" translatesAutoresizingMaskIntoConstraints="NO" id="Qy3-Ar-8CK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qy3-Ar-8CK">
                                 <rect key="frame" x="96" y="64" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Qy3-Ar-8CK" secondAttribute="height" multiplier="1:1" id="Ufe-OZ-Pz6"/>
@@ -307,7 +307,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2023-03-07 14.58.57" width="640" height="640"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">

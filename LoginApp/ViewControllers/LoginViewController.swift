@@ -14,7 +14,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     
     // MARK: - Private Properties
-    private let user = User.getUserData()
+    private let user = User.getUser()
     
     // MARK: - Override Methods
     override func viewDidLoad() {
@@ -30,7 +30,7 @@ final class LoginViewController: UIViewController {
     // MARK: - Navigation
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard
-            userNameTF.text == user.name,
+            userNameTF.text == user.login,
             passwordTF.text == user.password
         else {
             showAlert(
@@ -58,7 +58,7 @@ final class LoginViewController: UIViewController {
     // MARK: - IBActions
     @IBAction func forgotRegisterData(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(title: "Oops!", message: "Your name is \(user.name) 😉")
+        ? showAlert(title: "Oops!", message: "Your name is \(user.login) 😉")
         : showAlert(title: "Oops!", message: "Your password is \(user.password) 😉")
     }
     

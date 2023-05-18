@@ -27,10 +27,11 @@ final class AboutMeViewController: UIViewController {
         view.addVerticalGradientLayer()
         title = user.person.fullName
         
+        avatarImageView.image = UIImage(named: user.person.photo)
         nameLabel.text = "Name: " + user.person.name
         surnameLabel.text = "Surname: " + user.person.surname
         positionLabel.text = "Position: " + user.person.position
-        educationLabel.text = "Education: " + user.person.education
+        educationLabel.text = "Education: " + user.person.education.title
     }
     
     override func viewWillLayoutSubviews() {

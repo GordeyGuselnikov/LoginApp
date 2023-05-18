@@ -74,11 +74,11 @@
 		8FD65C152A0C037A0037C21B /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				8FD65C372A0EA6770037C21B /* App */,
 				8FD65C352A0EA6410037C21B /* Models */,
 				8FD65C362A0EA6550037C21B /* ViewControllers */,
 				8FC490542A158CED0072A6FC /* Extensions */,
 				8FD65C342A0EA62A0037C21B /* Storyboards */,
+				8FD65C372A0EA6770037C21B /* App */,
 				8FD65C382A0EA8530037C21B /* Resources */,
 			);
 			path = LoginApp;
