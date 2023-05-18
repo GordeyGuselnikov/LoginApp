@@ -10,7 +10,11 @@ import UIKit
 final class AboutMeViewController: UIViewController {
 
     // MARK: - IB Outlets
-    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var avatarImageView: UIImageView! {
+        didSet {
+            avatarImageView.layer.cornerRadius = avatarImageView.frame.height / 2
+        }
+    }
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var surnameLabel: UILabel!
@@ -35,7 +39,7 @@ final class AboutMeViewController: UIViewController {
     }
     
     override func viewWillLayoutSubviews() {
-        avatarImageView.layer.cornerRadius = avatarImageView.frame.height / 2
+//        avatarImageView.layer.cornerRadius = avatarImageView.frame.height / 2
     }
     
     // MARK: - Navigation

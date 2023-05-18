@@ -7,22 +7,17 @@
 
 import UIKit
 
+// MARK: - Set background color
 extension UIView {
     
     func addVerticalGradientLayer() {
-        
         let primaryColor = UIColor(
             red: 210/255,
             green: 109/255,
             blue: 128/255,
             alpha: 1
         )
-        let secondaryColor = UIColor(
-            red: 107/255,
-            green: 148/255,
-            blue: 230/255,
-            alpha: 1
-        )
+        guard let secondaryColor = UIColor(named: "secondaryColor") else { return }
         
         let gradient = CAGradientLayer()
         gradient.frame = bounds

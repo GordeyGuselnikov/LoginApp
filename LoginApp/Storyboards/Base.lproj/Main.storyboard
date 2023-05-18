@@ -263,7 +263,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="C4D-c1-oB8">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pHf-Zk-EM1" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pHf-Zk-EM1" customClass="TabBarController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4yB-jz-PxL">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

@@ -19,7 +19,7 @@ final class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Details"
+        title = "\(user.person.fullName) Details"
         view.addVerticalGradientLayer()
         detailsTextView.backgroundColor = .clear
         detailsTextView.text = user.person.details
