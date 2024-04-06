@@ -27,19 +27,18 @@ final class AboutMeViewController: UIViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.addVerticalGradientLayer()
-        title = user.person.fullName
         
+        title = user.person.fullName
         avatarImageView.image = UIImage(named: user.person.photo)
         nameLabel.text = "Name: " + user.person.name
         surnameLabel.text = "Surname: " + user.person.surname
         positionLabel.text = "Position: " + user.person.position
-        educationLabel.text = "Education: " + user.person.education.title
-    }
     
-    override func viewWillLayoutSubviews() {
-//        avatarImageView.layer.cornerRadius = avatarImageView.frame.height / 2
+        educationLabel.numberOfLines = 0
+        educationLabel.text = "Education: \(user.person.education.course.rawValue) \(user.person.education.title)"
+    
+        print("User ID: ", user.id)
     }
     
     // MARK: - Navigation

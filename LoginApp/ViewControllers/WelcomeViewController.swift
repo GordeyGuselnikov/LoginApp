@@ -19,6 +19,11 @@ final class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer()
-        welcomeLabel.text = "Welcome, \(user.person.name)"
+        welcomeLabel.text = """
+            Welcome, \(user.login)!!!
+            My name is \(user.person.fullName).
+            """
+        
+        print("User ID: ", user.id)
     }
 }

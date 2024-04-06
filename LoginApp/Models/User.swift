@@ -31,7 +31,7 @@ struct Person {
     let education: Education
     
     var fullName: String {
-        "\(surname) \(name)"
+        "\(name) \(surname)"
     }
     
     static func getPerson() -> Person {
@@ -39,26 +39,29 @@ struct Person {
             name: "Gordey",
             surname: "Guselnikov",
             photo: "photoGordey",
-            position: "iOS Engineer",
+            position: "iOS Developer",
             details: """
                         About
-                        I'm a software quality assurance engineer. I have 3+ years in Software Testing and over 15 years in the IT industry. I enjoy working in IT/High Tech environment. The Software QA Career is so attractive because I employ my natural talent and passion for perfection.
 
                         Skills:
                         OS/Platforms: Windows, MacOS, Unix, iOS
-                        Languages: Java, Swift, HTML, fundamentals of SQL, JavaScript
+                        Languages: Java, Swift, HTML, fundamentals of SQL
                         Database: Fundamentals of Oracle, MS SQL Server, MySQL, PostgreSQL
-                        Test Automation: Java, RestAssured, Selenium, Selenide, RestAssured, JUnit, Allure, Jenkins
-                        Test Management: Jira, TestRail
+                        Test Automation: Java, RestAssured, Selenium, Selenide, RestAssured, JUnit, Allure, Jenkins, Maven
+                        Test Management: Jira, TestRail, Qase.io
                         Tools: IntelliJ IDEA, Xcode, Git, Postman, Swagger, Confluence
+                         
+                        In my spare time I study developing apps for iOS. (Xcode, Swift).
 
-                        In my free time, I study testing and developing applications for iOS. (Xcode, Swift).
-
+                        Ready to discuss about relocate.
                         Languages: Russian(native), English(pre-intermediate)
 
                         https://github.com/GordeyGuselnikov
 
-                        guselnikovgordey@gmail.com || https://t.me/guselnikov_gordey || guselnikov_gordey (Skype) || +79234078937 (Mobile)
+                        guselnikovgordey@gmail.com
+                        https://t.me/gordey_guselnikov
+                        guselnikov_gordey (Skype)
+                        +79234078937 (Mobile)
                     """,
             education: Education.getEducation()
         )

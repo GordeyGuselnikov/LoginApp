@@ -7,10 +7,10 @@
 
 import UIKit
 
-class TabBarController: UITabBarController {
+final class TabBarController: UITabBarController {
     
     var user: User!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,18 +22,20 @@ class TabBarController: UITabBarController {
         
         transferData()
     }
-
+    
     private func transferData() {
-            guard let viewControllers else { return }
-            
-            viewControllers.forEach {
-                if let welcomeVC = $0 as? WelcomeViewController {
-                    welcomeVC.user = user
-                } else if let navigationVC = $0 as? UINavigationController {
-                    let aboutMeVC = navigationVC.topViewController
-                    guard let aboutMeVC = aboutMeVC as? AboutMeViewController else { return }
-                    aboutMeVC.user = user
+        guard let viewControllers else { return }
+        
+        viewControllers.forEach {
+            if let welcomeVC = $0 as? WelcomeViewController {
+                welcomeVC.user = user
+            } else if let navigationVC = $0 as? UINavigationController {
+                let aboutMeVC = navigationVC.topViewController
+                guard let aboutMeVC = aboutMeVC as? AboutMeViewController else {
+                    return
                 }
+                aboutMeVC.user = user
             }
+        }
     }
 }

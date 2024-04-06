@@ -23,5 +23,7 @@ final class DetailViewController: UIViewController {
         view.addVerticalGradientLayer()
         detailsTextView.backgroundColor = .clear
         detailsTextView.text = user.person.details
+        
+        print("User ID: ", user.id)
     }
 }
